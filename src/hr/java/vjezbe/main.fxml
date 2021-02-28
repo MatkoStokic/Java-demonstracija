@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Artikli">
+               <items>
+                  <Menu mnemonicParsing="false" text="Automobili">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#prikaziPretragaAutomobila" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosAutomobila" text="Unos" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Usluge">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#prikaziPretragaUsluga" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosUsluga" text="Unos" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Stanovi">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#prikaziPretragaStanova" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosStanova" text="Unos" />
+                    </items>
+                  </Menu>
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Korisnici">
+               <items>
+                  <Menu mnemonicParsing="false" text="Privatni">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#prikaziPretragaPrivatnih" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosPrivatnih" text="Unos" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Poslovni">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#prikaziPretragaPoslovnih" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosPoslovnih" text="Unos" />
+                    </items>
+                  </Menu>
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Prodaje">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#prikaziPretragaProdaja" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#prikaziUnosProdaja" text="Unos" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
